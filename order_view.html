@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="shortcut icon" href="assets/sofa-xxl.png">
+    
+
+    <title>Invoice</title>
+    <style>
+            @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+        *{
+            font-family: "Poppins", sans-serif;
+
+
+        }
+        body {
+            font-family: Arial, sans-serif;
+            /* margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; */
+
+    
+      background-image: url(https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+        .invoice-container {
+            width: 60%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            /* background: #f4c500; */
+            /* background-color:gray; */
+            background-color: #B8AC9A;
+
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header span {
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            /* border: 1px solid #ddd; */
+            padding: 8px;
+            /* text-align: center; */
+
+        }
+        th {
+            /* background-color: #f4c500; */
+            /* background-color:gray; */
+            background-color:#B8AC9A;
+            text-align: left;
+        }
+        .total {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .terms {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        .signature {
+            text-align: right;
+            margin-top: 40px;
+            font-size: 18px;
+            font-style: italic;
+        }
+        .payment-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .payment-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="header">
+            <span>Invoice No: 001</span>
+            <span>Account No: 887 489 488 895</span>
+            <span>Date: 10/Mar/2025</span>
+        </div>
+
+        <table>
+            <tr>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Swiivel</td>
+                <td>$47</td>
+                <td>1</td>
+                <td>$47</td>
+            </tr>
+            <tr>
+                <td>Seating Adriano Lounge</td>
+                <td>$139</td>
+                <td>1</td>
+                <td>$139</td>
+            </tr>
+            <tr>
+                <td>Brass LED Table Lamp </td>
+                <td>$35</td>
+                <td>2</td>
+                <td>$70</td>
+            </tr>
+            <tr>
+                <td> Wall lamp Alsen </td>
+                <td>$21</td>
+                <td>3</td>
+                <td>$63</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td><b>  Total Payment:</b></td>
+                <td></td>
+                <td> $319<b> </b></td>
+            </tr>
+        </table>
+
+        <!-- <div class="total">
+            <strong>Total Payment: $2600</strong>
+        </div> -->
+
+        <div class="payment-links">
+            <a href="payment.html">Confirm Payment</a>
+        </div>
+
+        <div class="terms">
+            <strong>Terms & Conditions</strong><br>
+            A Terms and Conditions agreement is the agreement that includes the terms, the rules, and the guidelines of acceptable behavior and other useful sections to which users must agree in order to make the payment.
+        </div>
+
+        <!-- <div class="signature">
+            <strong>ImaniTal</strong> <br>
+            Imani Talley
+        </div> -->
+    </div>
+</body>
+</html>

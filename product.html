@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="shortcut icon" href="assets/sofa-xxl.png">
+
+    <title>Web Design Mastery | furni.shop</title>
+   
+  </head>
+
+  <body>
+
+<!-- ---------------------------navbar start-------------------------- -->
+
+<nav id="nav">
+    <div class="nav__header">
+      <div class="nav__logo">
+        <!-- <a href="#" class="logo">furni.shop</a> -->
+        <img src="/assets/LOGO.png" alt="LOGO" class="logo">
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <div class="links">
+
+ <ul class="nav__links" id="nav-links">
+      <li><a href="index.html" >Home</a></li>
+      <!-- <li><a href="product.html"  class="active" >Products</a></li>  -->
+      <li>
+        <a href="product.html" class="active">Products</a>
+        <div class="cotagory_menu">
+          <ul>
+            <!-- <li><a href="catogory_for_sofa.html">Sofa</a></li> -->
+            <li><a href="chair.html">Chair</a></li>
+            <li><a href="catogort_for_Blub.html">Bulb</a></li>
+          </ul>
+        </div>
+      </li> 
+      <li><a href="About_us.html"   >About</a></li>
+      <li><a href="index.html#contact"   >Contact</a></li>
+      <li><a href="register.html" id="login">Login</a></li>
+    </ul>
+         
+    </div>
+    <div class="searchbar">
+        <input type="text" id="search-input" placeholder="Search..." />
+        <!-- <button type="submit">Buy</button> -->
+         <a href="order_view.html" id="buy"><i class="fas fa-shopping-cart cart-icon"></i> </a>
+      </div>
+  </nav>
+  
+ <section class="section__container product__container" id="product">
+
+    <h2 class="section__header">Products</h2>
+
+    <div class="product__grid">
+
+     <!--///////////////////////////////////////// singel sofa /////////////////////////////////////////// -->
+
+<!-- row1  -->
+
+<div class="product__card">
+  <h4>Swiivel</h4>
+  <!-- <p class="line_throught">$50.00</p> -->
+  <p>$47.00</p>
+  <p>-2% OFF</p>
+  <img src="assets/product-1.png" alt="product1" />
+  <!-- <button>BUY</button> -->
+  <button class="cart-button add_btn" onclick="addToCart(this)">
+    <i class="fas fa-shopping-cart cart-icon"></i>
+    Add to Cart
+    <div class="loading"></div>
+</button>
+<button class="cart-button add_btn" onclick="addToCart(this)">
+  <i class="fas fa-shopping-cart cart-icon"></i>
+  Add to Cart
+  <div class="loading"></div>
+</button>  
+</div>
+
+<div class="product__card">
+  <h4> Naan Armchair - Pianca</h4>
+<!-- <p class="line_throught">$47.00</p> -->
+  <p>$45.00</p>
+  <p>-2% OFF</p>
+
+  <img src="assets/product-2.png" alt="product2" />
+  <!-- <button>BUY</button> -->
+  <button class="cart-button add_btn" onclick="addToCart(this)">
+    <i class="fas fa-shopping-cart cart-icon"></i>
+    Add to Cart
+    <div class="loading"></div>
+</button>
+</div>
+
+<div class="product__card">
+  <h4> Luxury Quilted Velvet Sofa</h4>
+  <!-- <p class="line_throught">$63.00</p> -->
+  <p>$54.90</p>
+  <p>-2% OFF</p>
+
+  <img src="assets/product-3.png" alt="product3" />
+  <!-- <button>BUY</button> -->
+  <button class="cart-button add_btn" onclick="addToCart(this)">
+    <i class="fas fa-shopping-cart cart-icon"></i>
+    Add to Cart
+    <div class="loading"></div>
+</button>
+
+</div>
+
+     <!--///////////////////////////////////////// double sofa /////////////////////////////////////////// -->
+
+<!-- row2  -->
+
+      <div class="product__card">
+        <h4>Turner Small Sofa </h4>
+        <p>$149.90</p>
+        <img src="assets/product-4.png" alt="product4" />
+        <!-- <button>BUY</button> -->
+        <button class="cart-button add_btn" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+
+      </div>
+
+      <div class="product__card">
+        <h4>Seating Adriano Lounge</h4>
+        <p>$139.90</p>
+        <img src="assets/product-5.png" alt="product5" />
+        <!-- <button>BUY</button> -->
+        <button class="cart-button add_btn" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+
+      </div>
+
+      <div class="product__card">
+        <h4>Bell Sofa</h4>
+        <p>$155.90</p>
+        <img src="assets/product-6.png " alt="product6" />
+        <!-- <button>BUY</button> -->
+        <button class="cart-button add_btn" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+
+      </div>
+
+      
+<!-- /////////////////////////////////// gaming chair /////////////////////////////// -->
+      <!-- row3  -->
+
+      <div class="product__card">
+        <h4>Darkecho Gaming Chair</h4>
+        <!-- <p class="line_throught">$180.00</p> -->
+        <p>$177.90</p>
+        <p>-2% OFF</p>
+
+        <img src="assets/product-7.png" alt="product7" />
+        <!-- <button>BUY</button> -->
+        <button class="cart-button add_btn" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+
+      </div>
+
+      <div class="product__card">
+        <h4>AutoFull C3 Gaming Chair</h4>
+        <!-- <p class="line_throught">$210.00</p> -->
+        <p>$199.90</p>
+        <p>-2% OFF</p>
+
+        <img src="assets/product-8.png" alt="product8" />
+        <!-- <button>BUY</button> -->
+        <button class="cart-button add_btn" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+
+      </div>
+
+        
+      <div class="product__card">
+        <h4> Ergonomic Chair for Gaming and Office  </h4>
+        <!-- <p class="line_throught">$230.00</p> -->
+        <p>$219.90</p>
+        <p>-2% OFF</p>
+
+        <img src="assets/product-9.png" alt="product9" />
+        <!-- <button>BUY</button> -->
+        <button class="cart-button add_btn" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+
+      </div>
+
+      <!-- ///////////////////////////////////// business chair ///////////////////////////////////// -->
+<!-- row4  -->
+
+      <div class="product__card">
+        <h4>Techni Sport Velvet Gaming Chair</h4>
+        <p>$149.90</p>
+        <img src="assets/product-10.png" alt="product10" />
+        <!-- <button>Order</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+
+      </div>
+
+ <div class="product__card">
+        <h4>Leather Executive Big & Tall Chair</h4>
+        <p>$177.90</p>
+        <img src="assets/product-11.png" alt="product11" />
+        <!-- <button>BUY</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+      </div>
+
+      <div class="product__card">
+        <h4>Office Chair with Wooden Base with Polish</h4>
+        <p>$158.90</p>
+        <img src="assets/product-12.png" alt="product12" />
+        <!-- <button>Order</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+      </div>
+
+      <!--////////////////////////////////////// ciling Blubs ///////////////////////////////////////////////// -->
+<!-- row5  -->
+
+      <div class="product__card">
+        <h4>8 Lights Gold Chandelier </h4>
+        <p>$499.90</p>
+        <img src="assets/product-13.png" alt="product13" />
+        <!-- <button>Order</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+      </div>
+
+      <div class="product__card">
+        <h4>Candle Chandelier Victorian style</h4>
+        <p>$519.90</p>
+        <img src="assets/product-14.png" alt="product14" />
+        <!-- <button>Order</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+      </div>
+
+      <div class="product__card">
+        <h4> 9 Lights Whitey Chandelier</h4>
+        <p>$509.90</p>
+        <img src="assets/product-15.png" alt="product15" />
+        <!-- <button>Order</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+      </div>
+
+      <!--///////////////////////////////////////// night blub //////////////////////////////////////////// -->
+<!-- row6  -->
+
+      <div class="product__card">
+        <h4>Improvhome Table Lamp </h4>
+        <p>$19.90</p>
+        <img src="assets/product-16.png" alt="product16" />
+        <!-- <button>Order</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+      </div>
+
+      <div class="product__card">
+        <h4>Small Crystal Table Lamp </h4>
+        <p>$14.90</p>
+        <img src="assets/product-17.png" alt="product17" />
+        <!-- <button>Order</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+      </div>
+
+      <div class="product__card">
+        <h4>Modern Green Tall Table Lamp </h4>
+        <p>$21.90</p>
+        <img src="assets/product-18.png" alt="product18" />
+        <!-- <button>Order</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+      </div>
+
+      <!--///////////////////////////////////////// study blub //////////////////////////////////////////// -->
+<!-- row7  -->
+
+      <div class="product__card">
+        <h4>Brass LED Table Lamp </h4>
+        <p>$35.90 </p>
+        <img src="assets/product-19.png" alt="product19" />
+        <!-- <button>Order</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+      </div>
+
+      <div class="product__card">
+        <h4>Ambia Table Lamp</h4>
+        <p>$21.90</p>
+        <img src="assets/product-20.png" alt="product10" />
+        <!-- <button>Order</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+      </div>
+
+      <div class="product__card">
+        <h4>Night Mushroom Lamp </h4>
+        <p>$17.90</p>
+        <img src="assets/product-21.png" alt="product21" />
+        <!-- <button>Order</button> -->
+        <button class="cart-button" onclick="addToCart(this)">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          Add to Cart
+          <div class="loading"></div>
+      </button>
+      </div>
+
+
+       <!--//////////////////////////////////////// wall blubs ///////////////////////////////////////// -->
+<!-- row8   -->
+
+<div class="product__card">
+  <h4> Wall lamp Alsen </h4>
+  <!-- <p class="line_throught">$25.00</p> -->
+  <p>$21.00</p>
+  <p>-2% OFF</p>
+
+  <img src="assets/product-22.jpg" alt="product22" />
+  <!-- <button>Order</button> -->
+  <button class="cart-button" onclick="addToCart(this)">
+    <i class="fas fa-shopping-cart cart-icon"></i>
+    Add to Cart
+    <div class="loading"></div>
+</button>
+</div>
+
+<div class="product__card">
+  <h4>Anmytek Wall Light</h4>
+  <!-- <p class="line_throught">$18.90</p> -->
+  <p>$16.00</p>
+  <p>-2% OFF</p>
+
+  <img src="assets/product-23.jpg" alt="product23" />
+  <!-- <button>Order</button> -->
+  <button class="cart-button" onclick="addToCart(this)">
+    <i class="fas fa-shopping-cart cart-icon"></i>
+    Add to Cart
+    <div class="loading"></div>
+</button>
+</div>
+
+<div class="product__card">
+  <h4>Wall Mount Lamp </h4>
+  <!-- <p class="line_throught">$20.00</p> -->
+  <p>$18.90</p>
+  <p>-2% OFF</p>
+
+  <img src="assets/product-24.jpg" alt="product24" />
+  <!-- <button>Order</button> -->
+  <button class="cart-button" onclick="addToCart(this)">
+    <i class="fas fa-shopping-cart cart-icon"></i>
+    Add to Cart
+    <div class="loading"></div>
+</button>
+</div>
+
+
+
+
+    </div>
+  </section>
+
+
+
+    <!-- -----------------------------Js file add--------------------------------------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+    <!-- <script src="gsap.js"></script> -->
+
+    
+    
+</body>
+</html>

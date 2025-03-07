@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/sofa-xxl.png">
+
+    <title>Login</title>
+    <link rel="stylesheet" href="style_for_login_register.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+            background-image: url(https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+            background-repeat: no-repeat;
+
+            background-size: cover;
+        }
+          #nav{
+            position: absolute;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="nav">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <!-- <a href="#" class="logo">furni.shop</a> -->
+             <img src="/assets/LOGO.png" alt="LOGO" class="logo">
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" >Contact</a></li>
+          <!-- <li><a href="indexx.html" class="active">Home</a></li>
+          <li><a href="productx.html">Products</a></li>
+          <li><a href="About_usx.html">About</a></li>
+          <li><a href="#contactx" >Contact</a></li> -->
+        
+        </ul>
+      </nav>
+  
+
+    <div class="center">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="txt_field">
+                <input type="text" class="input" id="username" required placeholder="Enter Username">
+            </div>
+            <div class="txt_field">
+                <input type="password" class="input" id="password" required placeholder="Enter Password">
+            </div>
+            <div class="txt_field">
+                <input type="email" class="input" id="email" required placeholder="Enter email">
+            </div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Not a member? <a href="index.html">Register Here</a>
+            </div>
+            <p id="error-message"></p>
+        </form>
+    </div>
+ <!-- -------------------------------------this one of no user define--------------------------------------------------- -->
+    <!-- <script>
+        // If no registered users exist, redirect to register page
+        if (localStorage.length === 0) {
+            alert("No registered users found! Redirecting to Register Page.");
+            window.location.href = "register.html";
+        }
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let username = document.getElementById("username").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let errorMessage = document.getElementById("error-message");
+
+            if (localStorage.getItem(username) && localStorage.getItem(username) === password) {
+                window.location.href = "index.html"; // Redirect to home page after login
+            } else {
+                errorMessage.textContent = "Invalid username or password.";
+            }
+        });
+      
+    </script> -->
+    <!-- -----------------------------------------this code one user defined ---------------------------------------------------------- -->
+    <script>
+      
+        // Add an event listener to the login form when it is submitted
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior (which reloads the page)
+    
+            // Get the entered username and password, trimming any leading or trailing spaces
+            let username = document.getElementById("username").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let email=document.getElementById("email").value.trim();
+            
+            // Get the error message element to display login errors
+            let errorMessage = document.getElementById("error-message");
+    
+            // Define the valid (fixed) username and password for authentication
+            const validUsername = "admin"; // Preset valid username
+            const validPassword = "pwd123321"; // Preset valid password
+            const validEmail="abc@gmail.com";// Preset valid email
+
+
+
+            // Check if the entered credentials match the fixed ones
+            if (username === validUsername && password === validPassword && email===validEmail) {
+                // alert("Login Successful! Redirecting..."); // Display success message
+                window.location.href = "index.html"; // Redirect the user to the index page
+            } else {
+                errorMessage.textContent = "Invalid username or password."; // Display an error message if credentials are incorrect
+            }
+        });
+    </script>
+</body>
+</html>

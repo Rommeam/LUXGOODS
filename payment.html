@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/sofa-xxl.png">
+  <title>Furniture Purchase Form</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>     
+  <div class="checkout-container">
+    <section class="delivery-info">
+      <h2>Delivery</h2>
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" required>
+      
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" required>
+      
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" required>
+      
+      <label for="state">State/Region</label>
+      <input type="text" id="state" name="state" required>
+      
+      <label for="postal-code">Postal Code </label>
+      <input type="text" id="postal-code" name="postal-code" placeholder="08101">
+      
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="delivery-method">Choose a Delivery Method</label>
+      <select id="delivery-method" name="delivery-method" required>
+        <option value="yangon">Yangon Delivery (K 10,000.00)</option>
+        <option value="national">National Delivery (K 20,000.00)</option>
+      </select>
+    </section>
+
+    <section class="payment-info">
+      <h2>Payment</h2>
+      <label for="payment-method">Payment Method</label>
+      <select id="payment-method" name="payment-method" required>
+        <option value="cash-on-delivery">Cash on Delivery</option>
+        <option value="bank-deposit">KPay</option>
+        <option value="wavepay">WavePay</option>
+      </select>
+      
+      <label for="card-number">Card Number (If applicable)</label>
+      <input type="text" id="card-number" name="card-number" placeholder="Enter card number">
+      
+      <label for="billing-address">Billing Address</label>
+      <input type="text" id="billing-address" name="billing-address" placeholder="Enter billing address">
+    </section>
+
+    <div class="checkout-footer">
+      <button type="submit" onclick="confirmPayment()">Payment Confirm</button>
+    </div>
+    <div class="checkout-footer">
+      <button type="submit" style="background-color:red; margin-top: 5px;" onclick="confirmCancel()"><a href="product.html" style="color: white; text-decoration: none;">Cancel Payment</a></button>
+    </div>
+  </div>
+
+  <script>
+    function confirmPayment() {
+      alert("Your payment has been successfully confirmed!");
+    }
+    
+    function confirmCancel() {
+      let confirmAction = confirm("Are you sure you want to cancel the payment?");
+      if (!confirmAction) {
+        event.preventDefault();
+      }
+    }
+  </script>
+</body>
+</html>
